@@ -56,29 +56,6 @@ Los modelos son datos ilustrativos, no una ficha técnica comercial.
 
 Al iniciar, los seis están disponibles y los ingresos son Q0.00. Los datos no persisten al cerrar.
 
-## Pruebas
-
-```bash
-javac -encoding UTF-8 -d bin src/*.java pruebas/Pruebas.java
-java -cp bin Pruebas
-```
-
-Resultado de referencia: 48 pruebas aprobadas. El programa de pruebas lanza `AssertionError` si una comprobación falla. Las pruebas usan su propio inventario.
-
-La carpeta `pruebas` incluye cuatro entradas de consola y sus salidas reales, además de los resultados del modelo. Para reproducir una sesión en Bash o CMD:
-
-```bash
-java -cp bin Main < pruebas/01-flujo-entrada.txt
-```
-
-En PowerShell:
-
-```powershell
-Get-Content pruebas/01-flujo-entrada.txt | java -cp bin Main
-```
-
-Repita con los archivos 02, 03 y 04. El PDF contiene los resultados esperados y obtenidos.
-
 ## Estructura
 
 - `src/Equipo.java`: clase abstracta, validación común y disponibilidad.
